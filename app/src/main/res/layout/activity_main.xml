@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_message"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:gravity="center_horizontal"
+
+        />
+
+    <CheckBox
+        android:id="@+id/fruit_apple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/apple"
+        android:layout_below="@+id/txt1"
+        android:onClick="SelectItem"
+
+        />
+
+    <CheckBox
+        android:id="@+id/fruit_orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/orange"
+        android:layout_below="@+id/fruit_apple"
+        android:onClick="SelectItem"
+        />
+
+    <CheckBox
+        android:id="@+id/fruit_lemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fruit_orange"
+        android:text="@string/lemon"
+        android:onClick="SelectItem"
+        />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_below="@+id/fruit_lemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/done"
+        android:layout_centerHorizontal="true"
+        android:onClick="finalSelection"
+        />
+
+    <TextView
+        android:id="@+id/txtFinalResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List of Fruits"
+        android:layout_below="@+id/btn1"
+
+        />
+
+
+</RelativeLayout>
